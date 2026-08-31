@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}django templates{% endblock %}</title>
+    <link rel ="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul><a href="{% url 'inicio:iniciov1' %}">Inicio</a></ul>
+        </nav>
+    </header>
+<main>
+    {% block content %}
+
+    {% endblock %}
+</main>
+<footer>
+    &copy; Back End Django 2026
+</footer>
+</body>
+</html>
